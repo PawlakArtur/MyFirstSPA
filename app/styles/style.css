@@ -1,0 +1,28 @@
+#div1{
+	background: red;
+	position: relative;
+}
+
+#div2{
+	background: green;
+}
+
+#div3{
+	background: yellow;
+}
+
+#div4{
+	background: magenta;
+}
+
+div{
+	margin: 50px;
+	display: inline-block;
+	height: 200px;
+	width: 500px;
+}
+
+#buttony{
+	display: block;
+	height: 10px;
+}
