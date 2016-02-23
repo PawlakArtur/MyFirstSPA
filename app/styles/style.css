@@ -1,56 +1,123 @@
 *{
 	box-sizing: border-box;
-	font-size: 17px;
+	margin: 0;
+	padding: 0;
 }
 
 body{
-	margin: 0;
-	padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #101010;
+  background-color: #d5edf3;
 }
 
-ul{
-	list-style: none;
-	width: 80%;
-	height: 40px;
-	display: block;
+.positioning{
+	width: 75%;
 	margin: 0 auto;
-	padding: 0;
-	background-color: #7A7A7A;
-	border: 1px solid #424242;
 }
 
-ul li{
-	width: 80px;
-	display: inline-block;
-	margin: 0;
-	background-color: #7A7A7A;
-	text-align: center;
-	border-bottom: 2px solid transparent;
+.nav-height{
+	height: 60px;
 }
 
-ul li:hover{
-	background-color: #969696;
-	border-bottom: 2px solid #424242;
-}
-
-ul li a{
-	display: inline-block;
-	text-decoration:none;
-	color: #000;
+nav{
 	width: 100%;
-	height: 100%;
-	line-height: 36px;
-	font-size: 1em;
+	background-color: #39C2CC;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	display: inline-block;
+	width: 170px;
+	border-bottom: 3px solid transparent;
+	vertical-align: top;
+	text-align: center;
+	transition: 300ms;
+}
+
+nav ul li:hover{
+	background-color: black 0.2;
+	border-bottom: 3px solid black;
+}
+
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	line-height: 57px;
+	width: 100%;
+	color: black;
+}
+
+#main{
+	width: 100%;
+	position: absolute;
+	top: 60px;
+	bottom: 20px;
 }
 
 #content{
-	width: 80%;
-	height: 400px;
-	margin: 0 auto;
-	background-color: #7A7A7A;
+	border-right: 1px solid #C3E7EB;
+	border-left: 1px solid #C3E7EB;
+	background-color: #d5edf3;
+}
+
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 10;
+	background-color: #39C2CC;
+}
+
+footer p{
+	height: 20px;
+	margin: 0 10px 0 0;
+	text-align: right;
+	background-color: #39BDCC;
+}
+
+#footer{
+	padding: 0 10px 0 0;
+}
+
+/*recipe.html*/
+
+.recipe{
+	padding: 10px 30px;
+	box-shadow: -10px 0px -10px #000000;
+}
+
+.recipe h1{
+	margin: 10px 5px;
 	text-align: center;
-	border: 1px solid transparent;
-	border-left: 1px solid #424242;
-	border-right: 1px solid #424242;
-	border: bottom: 1px solid #424242;
+}
+
+.recipe img{
+	width: 350px;
+	border: 2px solid #333333;
+	margin: 0 30px 0 0;
+	float: left;
+}
+
+.recipe ul{
+	list-style-type: none;
+	min-height: 250px;
+}
+
+.recipe ul li{
+	padding: 3px 0 0 395px;
+}
+
+#making{
+	padding: 3px;
+}
+
+.breakLine{
+	width: 80%;
+	margin: 10px auto;
+	border-bottom: 1px solid #333333;
 }
