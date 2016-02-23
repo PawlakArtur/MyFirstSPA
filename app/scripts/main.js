@@ -8,4 +8,16 @@ $(window).on('hashchange', function(){
 	enter(page);
 });
 
-enter('templates/home.html');
+enter('templates/recipes.html');
+
+function show(arg){
+	console.log(arg);
+	var element = document.getElementsByClassName(arg);
+	element[0].style.bottom = "0px";
+}
+
+function hide(arg){
+	console.log(arg);
+	var element = document.getElementsByClassName(arg);
+	element[0].style.bottom = "-60px";
+}
